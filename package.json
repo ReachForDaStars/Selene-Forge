@@ -1,0 +1,35 @@
+{
+  "name": "selene-forge",
+  "private": true,
+  "displayName": "Selene-Forge",
+  "description": "A visual block editor and multi-file IDE for Lua 5.1/5.4 with native C/C++ interop bridging.",
+  "version": "0.1.0",
+  "license": "MIT",
+  "scripts": {
+    "dev": "vite",
+    "build": "tsc --noEmit && vite build",
+    "preview": "vite preview",
+    "typecheck": "tsc --noEmit",
+    "selftest": "npx esbuild scripts/selftest.ts --bundle --platform=node --format=esm --outfile=selftest-bundle.mjs --external:wasmoon && node selftest-bundle.mjs"
+  },
+  "dependencies": {
+    "@blockly/field-multilineinput": "^13.4.0",
+    "@codemirror/lang-cpp": "^6.0.0",
+    "@codemirror/lang-json": "^6.0.0",
+    "@codemirror/language": "^6.0.0",
+    "@codemirror/legacy-modes": "^6.0.0",
+    "blockly": "^13.4.0",
+    "codemirror": "^6.0.0",
+    "@lezer/highlight": "^1.0.0",
+    "wasmoon": "^1.16.0",
+    "jszip": "^3.10.0"
+  },
+  "devDependencies": {
+    "@types/codemirror": "^5.0.0",
+    "@types/jszip": "*",
+    "@types/node": "^20.0.0",
+    "esbuild": "^0.25.0",
+    "typescript": "^5.0.0",
+    "vite": "^6.0.0"
+  }
+}

@@ -1,0 +1,257 @@
+/* ── Blockly dark theme overrides ─────────────────────────────────────────── */
+
+.blockly-host .blocklySvg,
+.blockly-host .blocklyMainBackground {
+  background: transparent !important;
+}
+.blockly-host .blocklyMainBackground {
+  stroke: none !important;
+}
+
+.blocklyToolbox {
+  background: var(--panel) !important;
+  border-right: 1px solid var(--line) !important;
+  padding: 8px 0 !important;
+  min-width: 154px;
+}
+.blocklyToolboxContents {
+  padding-bottom: 14px !important;
+}
+.blocklyTreeRow {
+  display: flex;
+  align-items: center;
+  height: 28px !important;
+  line-height: 28px !important;
+  padding: 0 8px !important;
+  margin: 1px 6px !important;
+  border-radius: 7px;
+  border-left: none !important;
+  cursor: pointer;
+}
+.blocklyTreeRow:hover {
+  background: var(--panel-3) !important;
+}
+.blocklyTreeRow.blocklyTreeSelected {
+  background: var(--panel-4) !important;
+}
+.blocklyTreeLabel {
+  font-family: var(--font) !important;
+  font-size: 12px !important;
+  font-weight: 550 !important;
+  color: var(--text-dim) !important;
+}
+.blocklyTreeRow.blocklyTreeSelected .blocklyTreeLabel {
+  color: var(--text) !important;
+}
+.blocklyTreeRow:hover .blocklyTreeLabel {
+  color: var(--text) !important;
+}
+.blocklyTreeIcon {
+  width: 9px !important;
+  height: 9px !important;
+  border-radius: 3px;
+  margin-right: 8px !important;
+  opacity: 0.85;
+}
+.blocklyTreeSeparator {
+  border-bottom: 1px solid var(--line-soft) !important;
+  margin: 6px 10px !important;
+}
+.blocklyFlyoutBackground {
+  fill: var(--panel-2) !important;
+  fill-opacity: 0.97 !important;
+  stroke: var(--line);
+  stroke-width: 1;
+}
+.blocklyFlyoutLabelText {
+  fill: var(--text-faint) !important;
+  font-family: var(--font) !important;
+  font-size: 12px !important;
+}
+.blocklyFlyoutButton {
+  fill: var(--panel-3) !important;
+  stroke: var(--line) !important;
+}
+.blocklyFlyoutButtonShadow {
+  fill: transparent !important;
+}
+.blocklyFlyoutButton:hover {
+  fill: var(--panel-4) !important;
+}
+.blocklyFlyoutButton .blocklyText {
+  fill: var(--text) !important;
+  font-family: var(--font) !important;
+}
+.blocklyScrollbarHandle {
+  fill: #2b364b !important;
+}
+.blocklyScrollbarHandle:hover {
+  fill: #3a4a66 !important;
+}
+.blocklyWidgetDiv .goog-menu,
+.blocklyDropDownDiv,
+.blocklyTooltipDiv {
+  background: var(--panel-3) !important;
+  border: 1px solid #2b3a52 !important;
+  border-radius: 8px !important;
+  box-shadow: var(--shadow-lg) !important;
+  color: var(--text) !important;
+  font-family: var(--font) !important;
+}
+.blocklyWidgetDiv .goog-menuitem {
+  color: var(--text-dim) !important;
+  font-family: var(--font) !important;
+  font-size: 12px !important;
+}
+.blocklyWidgetDiv .goog-menuitem:hover,
+.blocklyWidgetDiv .goog-menuitem-highlight {
+  background: var(--panel-4) !important;
+  color: var(--text) !important;
+}
+.blocklyDropDownDiv .blocklyText,
+.blocklyDropDownDiv .blocklyHtmlInput {
+  color: var(--text) !important;
+  font-family: var(--font) !important;
+}
+.blocklyHtmlInput {
+  background: var(--panel-3) !important;
+  border: 1px solid #3b4f77 !important;
+  border-radius: 6px !important;
+  color: var(--text) !important;
+  font-family: var(--mono) !important;
+  font-size: 12px !important;
+  padding: 4px 6px !important;
+  outline: none !important;
+}
+.blocklyText {
+  font-family: var(--font) !important;
+}
+.blocklyEditableText:hover > rect {
+  fill: rgba(255, 255, 255, 0.1) !important;
+  fill-opacity: 1 !important;
+  stroke: rgba(255, 255, 255, 0.25) !important;
+}
+.blocklyFieldRect {
+  fill: rgba(255, 255, 255, 0.09) !important;
+  stroke: rgba(255, 255, 255, 0.12) !important;
+  rx: 4px;
+}
+.blocklyDropdownText {
+  fill: #f2f5ff !important;
+}
+.blocklyCommentTextarea {
+  background: var(--panel-3) !important;
+  color: var(--text) !important;
+  border: 1px solid var(--line) !important;
+}
+.blocklyMultilineInputContainer textarea {
+  background: #0a0f18 !important;
+  color: #dfe7f5 !important;
+  border: 1px solid #34445f !important;
+  border-radius: 6px !important;
+  font-family: var(--mono) !important;
+  font-size: 11.5px !important;
+  line-height: 1.5 !important;
+  padding: 8px !important;
+}
+.blocklyFlyout .blocklyText {
+  font-family: var(--font) !important;
+}
+.blocklyFlyoutScrollbar {
+  fill: #2b364b !important;
+}
+.blocklyZoom > image {
+  opacity: 0.5;
+}
+.blocklyZoom > image:hover {
+  opacity: 1;
+}
+.blocklyTrash {
+  opacity: 0.5;
+}
+.blocklyTrash:hover {
+  opacity: 0.9;
+}
+.blocklyHighlightedConnectionPath {
+  stroke: var(--accent) !important;
+}
+.blocklyInsertionMarker > .blocklyPath {
+  fill-opacity: 0.25 !important;
+}
+.blocklyPathLight {
+  stroke-opacity: 0.25 !important;
+}
+.blocklyPathDark {
+  fill-opacity: 0.12 !important;
+}
+
+/* Multiline field display */
+.blockly-host .blocklyMultilineText textarea {
+  font-family: var(--mono) !important;
+}
+
+/* ── CodeMirror theme ────────────────────────────────────────────────────── */
+
+.editor-host .cm-editor {
+  height: 100%;
+  background: transparent;
+}
+.editor-host .cm-scroller {
+  font-family: var(--mono);
+  font-size: 12.5px;
+  line-height: 1.65;
+}
+.editor-host .cm-content {
+  padding: 10px 0 40vh;
+  caret-color: var(--accent);
+}
+.editor-host .cm-line {
+  padding: 0 14px 0 8px;
+}
+.editor-host .cm-gutters {
+  background: #090d14;
+  border-right: 1px solid var(--line-soft);
+  color: #45516a;
+  min-width: 42px;
+}
+.editor-host .cm-activeLineGutter {
+  background: rgba(170, 183, 255, 0.06);
+  color: var(--accent);
+}
+.editor-host .cm-activeLine {
+  background: rgba(170, 183, 255, 0.045);
+}
+.editor-host .cm-selectionBackground,
+.editor-host .cm-content ::selection {
+  background: rgba(122, 145, 255, 0.24) !important;
+}
+.editor-host .cm-cursor {
+  border-left: 1.5px solid var(--accent);
+}
+.editor-host .cm-matchingBracket {
+  background: rgba(123, 232, 195, 0.16);
+  outline: 1px solid rgba(123, 232, 195, 0.4);
+}
+.editor-host .cm-foldPlaceholder {
+  background: var(--panel-3);
+  border: 1px solid var(--line);
+  color: var(--text-faint);
+  border-radius: 4px;
+}
+.editor-host .cm-tooltip {
+  background: var(--panel-3);
+  border: 1px solid var(--line);
+  border-radius: 8px;
+  box-shadow: var(--shadow-lg);
+}
+.editor-host .cm-panels {
+  background: var(--panel-2);
+  border-bottom: 1px solid var(--line);
+  color: var(--text-dim);
+}
+.editor-host .cm-searchMatch {
+  background: rgba(255, 206, 122, 0.22);
+}
+.editor-host .cm-readonly .cm-content {
+  caret-color: transparent;
+}
